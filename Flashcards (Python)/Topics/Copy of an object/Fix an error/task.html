@@ -1,0 +1,16 @@
+<h2>Fix an error</h2>
+<p></p>
+<p>There is a friend group of four classmates: Marco, James, Jane, and Dan. Kate is Jane's friend, and Bob is Marco's younger brother. Kate and Bob aren't their classmates but do not belong in this group.</p>
+<p>One day the four friends decided to go to the swimming pool and to the cinema. Bob also wanted to go to the movies with them, and Kate joined the four friends at the pool. Bob didn't go to the swimming pool, and Kate didn’t go to the cinema.</p>
+<p>These events are shown in the code below.</p>
+<pre><code class="language-python">import copy
+
+classmates = ['Marco', 'James', 'Jane', 'Dan']
+
+cinema = classmates
+swimming = copy.copy(classmates)
+
+cinema.append('Bob')
+swimming.append('Kate')</code></pre>
+<p>How did the code affect the composition of the groups and what needs to be changed to keep the conditions correct?</p>
+<p>Only <code class="language-python">copy()</code> and <code class="language-python">deepcopy()</code> functions are used to copy objects.</p>

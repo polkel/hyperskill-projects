@@ -1,0 +1,22 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: "Bob has been added to the classmates list. This needs to be fixed by using\
+    \ copy() function, when creating the cinema list."
+- text: Bob and Kate have been added to the classmates list. This needs to be fixed
+    by using the deepcopy() function when creating the cinema and swimming lists.
+- text: Kate has been added to the cinema list. This needs to be fixed by using the
+    copy() function when creating the cinema list.
+- text: Bob has been added to the swimming list. This needs to be fixed by using the
+    deepcopy() function when creating the swimming list.
+files:
+- name: main.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/24622#comment
+status: Solved
+record: -1
+local_check: false
