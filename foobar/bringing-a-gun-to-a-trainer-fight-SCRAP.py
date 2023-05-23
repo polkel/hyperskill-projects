@@ -1,3 +1,7 @@
+# Went a little crazy with this problem... One test case kept missing... no matter what I did
+# then I finally decided  on a new approach and solved it with 3 hours left to spare!
+
+
 """
 Bringing a Gun to a Trainer Fight=================================
 
