@@ -1,0 +1,89 @@
+<div class="step-text">
+<p> </p>
+<h5 id="description">Description</h5>
+<p>It's not good that when you close the to-do list application, the tasks disappear. To avoid this, you need to create a database where you can store all information about your tasks. We will use <strong>SQLite</strong> to create a database and <strong>SQLAlchemy </strong>to manage the database from Python.</p>
+<p>First, you need to create a database file. To create it, use the <code class="language-python">create_engine()</code> method, where <code class="language-python">file_name</code> is the database file name:</p>
+<pre><code class="language-python">from sqlalchemy import create_engine
+
+engine = create_engine('sqlite:///file_name?check_same_thread=False')</code></pre>
+<p>The <code class="language-python">check_same_thread=False</code> argument connects a database from another thread. Please, set it as described, as the tests require it. Otherwise, you will get an exception.</p>
+<p>Once you've created your database file, you need to create a table inside. First, create a <strong>model class</strong> that describes the table in the database. Consider a piece of code below when doing it: </p>
+<pre><code class="language-python">class Table(Base):
+    ...
+    string_field = Column(String, default='default_value')
+    date_field = Column(Date, default=datetime.today())
+
+    def __repr__(self):
+        return self.string_field</code></pre>
+<ul>
+<li><code class="language-python">String_field</code> is a string column; <code class="language-python">default='default_value'</code> indicates that the default value of this column is <code class="language-python">default_value</code>;</li>
+<li><code class="language-python">Date_field</code> is a column that stores the date. SQLAlchemy automatically converts the SQL <code class="language-python">date</code> into a Python <code class="language-python">datetime</code> object;</li>
+<li>The <code class="language-python">__repr__</code> method returns a string representation of the class object. In the ORM concept, each row in the table is an object of a class.</li>
+</ul>
+<p>Once you are done with the table description, you need to add it to the database. This will create a table in the database by generating SQL queries according to the described models. Now, we can access the database. To do this, create a session.</p>
+<p>The <code class="language-python">session</code> object is the only thing you need to manage the database. This is how you can create a new row in the table:</p>
+<pre><code class="language-python">new_row = Table(string_field='This is a string field!',
+         date_field=datetime.strptime('01-24-2020', '%m-%d-%Y').date())</code></pre>
+<p>To get all rows from the table, you can pass the model class to the <code class="language-python">query()</code> method that selects all rows from the table represented by a model class:</p>
+<pre><code class="language-python">rows = session.query(Table).all()</code></pre>
+<p>The <code class="language-python">all()</code> method returns all rows from the table as a Python list. Each element of this list is an object of the model class. You can access the row fields by their names:</p>
+<pre><code class="language-python">first_row = rows[0] # In case rows list is not empty
+
+print(first_row.string_field) # Will print the value of the string_field
+print(first_row.id) # Will print the id of the row
+print(first_row) # Will print the string that was returned by the __repr__ method</code></pre>
+<h5 id="objectives">Objectives</h5>
+<p>To complete this stage, you need to arrange the data storage in the database. Here's what you need to do:</p>
+<ol>
+<li>Create a database file. Name it as <code class="language-python">todo.db</code>;</li>
+<li>Create a table in this database. Name it as <code class="language-python">task</code>. </li>
+</ol>
+<p>The table <code class="language-python">task</code> should have the following columns:</p>
+<ul>
+<li>An integer column named <code class="language-python">id</code>. Arrange it as the <code class="language-python">primary key</code>;</li>
+<li>A string column named <code class="language-python">task</code>;</li>
+<li>A date column named <code class="language-python">deadline</code>. It should have the date when the task was created by default. You can use the <code class="language-python">datetime.today()</code> method.</li>
+</ul>
+<p>Also, you need to implement a menu that will make your program more convenient. The menu should have the following items:</p>
+<ol>
+<li><code class="language-python">Today's tasks</code>. It prints all the tasks for today;</li>
+<li><code class="language-python">Add a task</code>. It asks for task descriptions and saves them in the database;</li>
+<li><code class="language-python">Exit</code><strong>.</strong></li>
+</ol>
+<h5 id="example">Example</h5>
+<p>The greater-than symbol followed by a space (<code class="language-python">&gt; </code>) represents the user input. Note that it's not part of the input.</p>
+<p><strong>Example 1: </strong><em>an example of the program output</em></p>
+<pre><code class="language-no-highlight">1) Today's tasks
+2) Add a task
+0) Exit
+&gt; 1
+
+Today:
+Nothing to do!
+
+1) Today's tasks
+2) Add a task
+0) Exit
+&gt; 2
+
+Enter a task
+&gt; Prepare a presentation
+The task has been added!
+
+1) Today's tasks
+2) Add a task
+0) Exit
+&gt; 1
+
+Today:
+1. Prepare a presentation
+
+1) Today's tasks
+2) Add a task
+0) Exit
+&gt; 0
+
+Bye!
+</code></pre>
+<p> </p>
+</div>

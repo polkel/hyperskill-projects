@@ -1,0 +1,60 @@
+type: edu
+custom_name: Plan it!
+files:
+- name: test/__init__.py
+  visible: false
+  learner_created: false
+- name: test/tests.py
+  visible: false
+  text: |
+    from typing import List
+
+    from hstest.stage_test import StageTest
+    from hstest.test_case import TestCase
+    from hstest.check_result import CheckResult
+
+    RIGHT_OUTPUT = """
+    Today:
+    1) Do yoga
+    2) Make a breakfast
+    3) Learn the basics of SQL
+    4) Learn about ORM
+    """
+
+
+    class ToDoList(StageTest):
+        def generate(self) -> List[TestCase]:
+            return [
+                TestCase()
+            ]
+
+        def check(self, reply, attach):
+            if reply.strip() == RIGHT_OUTPUT.strip():
+                return CheckResult.correct()
+            else:
+                return CheckResult.wrong('Your output should be like in example!\n'
+                                         ' Make sure you didn\'t print any extra spaces')
+
+
+    if __name__ == '__main__':
+        ToDoList('todolist.todolist').run_tests()
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |
+    from test.tests import ToDoList
+
+    if __name__ == '__main__':
+        ToDoList('todolist.todolist').run_tests()
+  learner_created: false
+- name: todolist/todolist.py
+  visible: true
+  text: |
+    # Write your code here
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/9619#comment
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Fri, 21 Jul 2023 16:56:29 UTC"
+record: 1

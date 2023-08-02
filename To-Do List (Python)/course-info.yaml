@@ -1,0 +1,12 @@
+type: hyperskill
+title: To-Do List (Python)
+language: English
+summary: <p>A to-do list can improve your work and personal life. It relieves stress;
+  you can be more efficient. Save time for the best things! Let's make it happen.</p><br/><br/>Learn
+  more at <a href="https://hyperskill.org/projects/105?utm_source=ide&utm_medium=ide&utm_campaign=ide&utm_content=project-card">https://hyperskill.org/projects/105</a>
+programming_language: Python
+environment: unittest
+content:
+- To-Do List (Python)
+- Topics
+mode: Study
