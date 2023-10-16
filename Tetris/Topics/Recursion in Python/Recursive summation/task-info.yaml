@@ -1,0 +1,17 @@
+type: code
+files:
+- name: main.py
+  visible: true
+  highlight_level: NONE
+  text: |-
+    def rec_sum(n):
+        # write the insides here!
+        return
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/7670#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Fri, 06 Oct 2023 16:06:22 UTC"
+record: -1
+submission_language: python3

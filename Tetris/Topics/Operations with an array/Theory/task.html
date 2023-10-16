@@ -1,0 +1,123 @@
+<h2>Operations with an array</h2>
+<div class="step-text">
+<p>This topic deals with the operations that can be carried out with a single array in NumPy. Previously, you have learned the basic operations with integers in Python, such as addition, subtraction, or multiplication. NumPy includes a set of operations for the arrays with various dimensions. Some of them are similar to the basic ones, but others are different.</p>
+<h5 id="standard-functions-with-one-dimensional-arrays" style="text-align: center;">Standard functions with one-dimensional arrays</h5>
+<p>The easiest way to explain the basics of array operations is to show a few examples with one-dimensional arrays. You will learn to use them on multi-dimensional arrays later in this topic.</p>
+<p>Let's start with finding the sum of the array elements. Similarly to basic addition in Python, we use the method <code class="language-python">sum()</code> that returns the sum of all values in the given array:</p>
+<pre><code class="language-python">array_1 = np.array([1, 2, 3, 4, 5])
+print(array_1.sum())  # 15
+</code></pre>
+<p>The method <code class="language-python">array.prod()</code> returns the product of the array elements. It is similar to multiplication in Python:</p>
+<pre><code class="language-python">print(array_1.prod())  # 120</code></pre>
+<p><code class="language-python">array.max()</code> and <code class="language-python">array.min()</code> return the maximum or minimum value in the array, respectively:</p>
+<pre><code class="language-python">print(array_1.max())  # 5
+print(array_1.min())  # 1</code></pre>
+<p>Finally, <code class="language-python">array.argmax()</code> and <code class="language-python">array.argmin()</code> return the <strong>indexes</strong><em> </em>of the maximum or minimum values in the array.</p>
+<pre><code class="language-python">print(array_1.argmax())  # 4
+print(array_1.argmin())  # 0</code></pre>
+<p> </p>
+<p></p><div class="alert alert-primary">Be careful with data types in your array! All operations described in this topic work only with integers and floats.</div>
+<p> </p>
+<h5 id="statistical-functions-with-one-dimensional-arrays" style="text-align: center;">Statistical functions with one-dimensional arrays</h5>
+<p>NumPy also provides tools to implement statistical calculations. Take a look at the main statistical functions and their descriptions:</p>
+<table align="center">
+<tbody>
+<tr>
+<td><strong>NumPy methods and functions</strong></td>
+<td><strong>Descriptions</strong></td>
+</tr>
+<tr>
+<td><code class="language-python">array.std()</code> or <code class="language-python">np.std(array)</code></td>
+<td>Computation of the Standard Deviation</td>
+</tr>
+<tr>
+<td><code class="language-python">array.mean()</code> or <code class="language-python">np.mean(array)</code></td>
+<td>Computation of the Arithmetic Mean</td>
+</tr>
+<tr>
+<td><code class="language-python">array.var()</code> or <code class="language-python">np.var(array)</code></td>
+<td>Computation of the Variance</td>
+</tr>
+<tr>
+<td><code class="language-python">np.median(array)</code></td>
+<td>Computation of the Array Element Median</td>
+</tr>
+<tr>
+<td><code class="language-python">np.average(array)</code></td>
+<td>Computation of the Array Element Average</td>
+</tr>
+</tbody>
+</table>
+<p>You can see the examples of these operations below:</p>
+<pre><code class="language-python">array_2 = np.array([3, 56, 78, 32, 65, 0, 9])
+print(array_2.std())  # 29.576604101960076
+print(array_2.mean())  # 34.714285714285715
+print(array_2.var())  # 874.7755102040816
+print(np.median(array_2))  # 32.0
+print(np.average(array_2))  # 34.714285714285715
+</code></pre>
+<p>Mind <code class="language-python">array_2.mean()</code> and <code class="language-python">np.average(array_2)</code>. We have the same result but it doesn't mean that they are interchangeable. For <code class="language-python">np.average(array_2)</code> you can also specify weights with which each value contributes to the average. The weights are usually given as a list of the same length. Have a look at the example below.</p>
+<pre><code class="language-python">array_2 = np.array([3, 56, 78, 32, 65, 0, 9])
+print(np.average(array_2, weights = [1, 2, 3, 4, 5, 6, 7]))  # 30.892857142857142</code></pre>
+<p>In this case, the formula is the following: </p>
+<pre><strong>avg = sum(array_2 * weights) / sum(weights)</strong>
+</pre>
+<p>First of all, the element-wise product of <code class="language-python">array_2</code> and <code class="language-python">weights</code> allows us to obtain a new array of the same length. Then we sum all the elements of this array and divide the resultant integer by the sum of the <code class="language-python">weights</code> elements.</p>
+<h5 id="axes-in-arrays" style="text-align: center;">Axes in arrays</h5>
+<p>You already know that axes in the arrays define their dimensions. But what exactly is an axis? To put it short, an axis is a direction along the columns and rows of your array. One-dimensional arrays have only one row. Consider an example for the array <code class="language-python">np.array([56, 78, 96])</code>:</p>
+<p style="text-align: center;"><img alt="One-dimensional array" height="122" name="1(13).svg" src="https://ucarecdn.com/f65a0411-0804-4eee-9570-3c1b77a50484/" width="1000"/></p>
+<p>Now, let's take a look at another example with the two-dimensional array <code class="language-python">np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])</code>. Here, enumeration starts with columns. Here, the columns are Axis 0, and the rows are Axis 1:</p>
+<p style="text-align: center;"><img alt="Two-dimensional array" height="222" name="2(7).svg" src="https://ucarecdn.com/963516af-8023-4ac6-a485-03d60200e48d/" width="1000"/></p>
+<p>Working with two-dimensional arrays is rather simple, but how do we analyze axes in a three-dimensional array? It is easier than you might think: just imagine a coordinate system. Once again, let's look at an example. We have an array <code class="language-python">np.array([[[7, 8], [2, 10]], [[13, 0], [1, 2]]])</code> .</p>
+<p style="text-align: center;"><img alt="Graphical representation of a three-dimensional array" height="460" name="3(4).svg" src="https://ucarecdn.com/82e73efe-2f5a-4738-80f5-db9aac38eef5/" width="600"/></p>
+<p>Our array consists of two subarrays, each consisting of two columns and two rows. Axis 1 here represents the vertical axis, Axis 2 represents the horizontal axis, and Axis 0 is the so-called Z axis that corresponds to the depth of the array.</p>
+<p>So, the pairs <code class="language-python">[7, 13]</code>, <code class="language-python">[8, 0]</code>, <code class="language-python">[2, 1]</code>, and <code class="language-python">[10, 2]</code> will be analyzed along the Axis 0, the pairs <code class="language-python">[7, 2]</code>, <code class="language-python">[8, 10]</code>, <code class="language-python">[13, 1]</code>, and <code class="language-python">[0, 2]</code> will be analyzed along the Axis 1, and the pairs <code class="language-python">[7, 8]</code>, <code class="language-python">[2, 10]</code>, <code class="language-python">[13, 0]</code>, and <code class="language-python">[1, 2]</code> will be analyzed along the Axis 2.</p>
+<p>Arrays with four or more dimensions require some imagination to represent their structure, but it works the same way: you just add one more axis to your coordinate system.</p>
+<p> </p>
+<p></p><div class="alert alert-primary"> There is a cool trick to remember which index corresponds to which axis. When we have only one axis (that is, a row), it is always Axis 0. When a column appears, it becomes Axis 0, and the row switches to Axis 1. Finally, in the example above, the new axis becomes Axis 0, and the other two shift to Axis 1 (columns) and Axis 2 (rows). The same logic also works for multi-dimensional arrays with more than three dimensions.</div>
+<p> </p>
+<h5 id="specifying-axes-for-operations-in-multidimensional-arrays" style="text-align: center;">Specifying axes for operations in multidimensional arrays</h5>
+<p>Why are axes so important in NumPy? Sometimes you need to specify the axis you are working with, for example, when you carry out some operations with your array. This section contains some particular examples.</p>
+<p>There is no need to specify Axis 0 in one-dimensional arrays, but if you do, no errors will occur.</p>
+<pre><code class="language-python">array_3 = np.array([1, 2, 3])
+print(array_3.sum())  # 6
+print(array_3.sum(axis=0))  # 6
+</code></pre>
+<p> </p>
+<p></p><div class="alert alert-primary"> Mind the number of axes you're dealing with. If you print an index that is out of bounds of a certain array dimension, this will cause an error.</div>
+<p> </p>
+<p>Let's analyze a new two-dimensional array. If we don't specify any axes, the operations will be carried out on all elements,  just like with a one-dimensional array:</p>
+<pre><code class="language-python">array_4 = np.array([[1, 2, 3],
+                    [4, 5, 6],
+                    [7, 8, 9]])
+print(np.mean(array_4))  # 5.0
+print(array_4.sum())  # 45
+</code></pre>
+<p>If you want to carry out an operation with a particular axis, use the <code class="language-python">axis=X</code> command, where <code class="language-python">X</code> is the index of the desired axis:</p>
+<pre><code class="language-python">print(np.mean(array_4, axis=0))  # [4. 5. 6.]
+print(array_4.sum(axis=1))  # [ 6 15 24]
+</code></pre>
+<p>As you can see, <code class="language-python">np.mean(array_4, axis=0)</code> with the specified axis calculates the mean values for the elements in each column. For example, the mean of the first column is 4, because <code class="language-python">(1 + 4 + 7) / 3 = 4</code>. Similarly, <code class="language-python">array_4.sum(axis=1)</code> calculates the sum of all values in each row. For the first row, the sum is <code class="language-python">1 + 2 + 3 = 6</code>.</p>
+<p>Now let's take a look at another situation that may occur when we work with a three-dimensional array:</p>
+<pre><code class="language-python">array_5 = np.array([[[1, 2], [3, 4]],
+                    [[5, 6], [7, 8]]])
+print(array_5.sum(axis=0))
+# [[ 6  8]
+#  [10 12]]
+print(array_5.max(axis=1))
+# [[3 4]
+#  [7 8]]
+print(array_5.mean(axis=2))
+# [[1.5 3.5]
+#  [5.5 7.5]]
+</code></pre>
+<p><code class="language-python">array_5.sum(axis=0)</code> and <code class="language-python">array_5.max(axis=1)</code> work the same way as the example above; they calculate the sum of all values in each row and the maximum value in each column, respectively. As for <code class="language-python">array_5.mean(axis=2)</code>, it adds each pair <code class="language-python">[1, 2]</code>, <code class="language-python">[3, 4]</code>, <code class="language-python">[5, 6]</code>, <code class="language-python">[7, 8]</code>, calculates every mean, and returns a new array with these mean values.</p>
+<h5 id="conclusion" style="text-align: center;">Conclusion</h5>
+<p>In this topic, we have learned:</p>
+<ul>
+<li>how to carry out operations with one-dimensional arrays;</li>
+<li>why axes are important and how they work;</li>
+<li>how to specify axes when you're dealing with operations in NumPy.</li>
+</ul>
+<p>Now that you have this knowledge, it's time to test it and make sure you can put it to practice.</p>
+</div>

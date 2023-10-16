@@ -1,0 +1,17 @@
+type: code
+files:
+- name: main.py
+  visible: true
+  text: |-
+    import numpy as np
+
+
+    array = np.array([[[7, 8], [13, 9]], [[9, 5], [15, 14]]])
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/10178#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Wed, 04 Oct 2023 19:47:26 UTC"
+record: -1
+submission_language: python3

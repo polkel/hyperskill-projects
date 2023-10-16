@@ -1,0 +1,26 @@
+type: matching
+captions:
+- <code>array.prod(axis=1)</code>
+- <code>array.mean(axis=1)</code>
+- <code>array.min(axis=0)</code>
+- <code>array.sum(axis=0)</code>
+options:
+- "<code>[13.         27.33333333 45.33333333]</code>"
+- "<code>[200  45  12]</code>"
+- "<code>[    0   308 11748]</code>"
+- "<code>[34  0  3]</code>"
+files:
+- name: main.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/10172#comment
+status: Solved
+record: -1
+ordering:
+- 0
+- 1
+- 2
+- 3

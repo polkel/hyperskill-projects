@@ -1,0 +1,20 @@
+type: code
+files:
+- name: main.py
+  visible: true
+  highlight_level: NONE
+  text: "def price_string(func):\n    def wrapper(arg):\n        return \"£\" + str(func(arg))\n\
+    \n    return wrapper  \n\n\ndef new_price():\n    ..."
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/10109#comment
+status: Solved
+feedback:
+  message: |-
+    <html>[+] Test #1. OK
+    [+] Test #2. OK
+    [+] Test #3. OK
+
+    3 of 3 test(s) passed.</html>
+  time: "Fri, 13 Oct 2023 20:30:50 UTC"
+record: -1
+submission_language: python3

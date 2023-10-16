@@ -1,0 +1,189 @@
+hyperskill_project:
+  id: 147
+  ide_files: https://cogniterra.org/media/attachments/lesson/25312/additional_files.json
+  is_template_based: false
+  use_ide: true
+  environment: unittest
+update_date: "Fri, 13 Oct 2023 19:01:09 UTC"
+stages:
+- id: 791
+  step: 11891
+  is_completed: true
+- id: 792
+  step: 11892
+  is_completed: true
+- id: 793
+  step: 11893
+  is_completed: true
+- id: 794
+  step: 11894
+  is_completed: true
+topics:
+  0:
+  - title: What is math?
+    theory_id: 28537
+  - title: Applications of Math
+    theory_id: 28832
+  - title: "Math notations, formulas, and statements"
+    theory_id: 28757
+  - title: Basic concepts
+    theory_id: 26143
+  - title: Cartesian coordinates
+    theory_id: 13114
+  - title: Basics of sets
+    theory_id: 8220
+  - title: Basics of functions
+    theory_id: 8857
+  - title: Properties of functions
+    theory_id: 20683
+  - title: Properties of numerical functions
+    theory_id: 20704
+  - title: "Vectors, matrices, scalars"
+    theory_id: 16969
+  - title: Introduction to matrices
+    theory_id: 7112
+  - title: Intro to NumPy
+    theory_id: 9672
+  - title: Operations with an array
+    theory_id: 10170
+  - title: Introduction to Python
+    theory_id: 5204
+  - title: Overview of the basic program
+    theory_id: 5208
+  - title: "PEP 8: Coding style conventions"
+    theory_id: 5879
+  - title: Comments
+    theory_id: 6081
+  - title: Load module
+    theory_id: 6019
+  - title: Installing packages with pip
+    theory_id: 6230
+  - title: Virtual Environment
+    theory_id: 13923
+  - title: If statement
+    theory_id: 5953
+  - title: Else statement
+    theory_id: 5932
+  - title: For loop
+    theory_id: 6065
+  - title: While loop
+    theory_id: 5940
+  - title: PyCharm basics
+    theory_id: 6193
+  - title: Class
+    theory_id: 6661
+  - title: Class instances
+    theory_id: 6669
+  - title: Methods
+    theory_id: 6931
+  - title: Running Python applications in PyCharm
+    theory_id: 19153
+  - title: Debugging Python applications in PyCharm
+    theory_id: 19163
+  - title: Intro to computational thinking
+    theory_id: 8742
+  - title: Components of computational thinking
+    theory_id: 8745
+  - title: How to read the documentation
+    theory_id: 12125
+  - title: Random module
+    theory_id: 6263
+  - title: Basic data types
+    theory_id: 5852
+  - title: Quotes and multi-line strings
+    theory_id: 5814
+  - title: Variables
+    theory_id: 5859
+  - title: Invoking a function
+    theory_id: 5891
+  - title: Boolean logic
+    theory_id: 6025
+  - title: List
+    theory_id: 5979
+  - title: Indexes
+    theory_id: 6189
+  - title: Declaring a function
+    theory_id: 5900
+  - title: Comparisons
+    theory_id: 5920
+  - title: String formatting
+    theory_id: 6037
+  - title: Arguments
+    theory_id: 7248
+  - title: Operations with list
+    theory_id: 6031
+  - title: Type casting
+    theory_id: 6224
+  - title: List comprehension
+    theory_id: 6315
+  - title: Nested lists
+    theory_id: 6938
+  - title: Slicing
+    theory_id: 6177
+  1:
+  - title: Computer algorithms
+    theory_id: 16547
+  - title: "Big O: how to count it"
+    theory_id: 35901
+  - title: "Best, average and worst cases"
+    theory_id: 20084
+  - title: Data structures
+    theory_id: 16927
+  - title: Pseudocode
+    theory_id: 15090
+  - title: Pseudocode basics
+    theory_id: 19510
+  - title: Complex constructions in pseudocode
+    theory_id: 20922
+  - title: Stack
+    theory_id: 5252
+  - title: Queue
+    theory_id: 28474
+  - title: Deque
+    theory_id: 18635
+  - title: Elif statement
+    theory_id: 5926
+  - title: Methods and attributes
+    theory_id: 6981
+  - title: Magic methods
+    theory_id: 7139
+  - title: Inheritance
+    theory_id: 9844
+  - title: Inheritance in Python
+    theory_id: 7235
+  - title: Polymorphism
+    theory_id: 10027
+  - title: Method overriding
+    theory_id: 7629
+  - title: Algorithms in Python
+    theory_id: 7316
+  - title: Stack in Python
+    theory_id: 8915
+  - title: Queue in Python
+    theory_id: 8925
+  - title: Functional decomposition
+    theory_id: 9571
+  2:
+  - title: Taking input
+    theory_id: 5913
+  - title: Naming variables
+    theory_id: 5885
+  - title: Program with numbers
+    theory_id: 5872
+  - title: Loop control statements
+    theory_id: 6302
+  - title: Any and all
+    theory_id: 7800
+  - title: Math functions
+    theory_id: 6256
+  - title: Integer arithmetic
+    theory_id: 5865
+  3:
+  - title: Create module
+    theory_id: 6057
+  - title: Docstrings
+    theory_id: 11869
+  - title: Decorators in OOP
+    theory_id: 10153
+  - title: Function decorators
+    theory_id: 10103

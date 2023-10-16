@@ -1,0 +1,13 @@
+type: code
+files:
+- name: main.py
+  visible: true
+  text: import numpy as np
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/10177#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Wed, 04 Oct 2023 19:45:59 UTC"
+record: -1
+submission_language: python3
