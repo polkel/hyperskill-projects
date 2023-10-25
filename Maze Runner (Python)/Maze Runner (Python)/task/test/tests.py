@@ -248,11 +248,40 @@ class MazeCheck:
         return mazes
 
 
+class Clue:
+    def __init__(self, h: int, w: int):
+        self.height = h
+        self.width = w
+
+
 class MazeRunnerTests(StageTest):
-    @dynamic_test
-    def test(self):
+    previous_mazes = []
+
+    test_data = [
+        ["7 9", Clue(7, 9)],
+        ["15 35", Clue(15, 35)],
+        ["15 35", Clue(15, 35)],
+        ["15 35", Clue(15, 35)],
+        ["15 35", Clue(15, 35)],
+        ["15 35", Clue(15, 35)],
+        ["15 35", Clue(15, 35)],
+        ["15 35", Clue(15, 35)],
+        ["15 35", Clue(15, 35)],
+        ["34 23", Clue(34, 23)],
+        ["34 23", Clue(34, 23)],
+        ["34 23", Clue(34, 23)],
+        ["34 23", Clue(34, 23)],
+        ["34 23", Clue(34, 23)],
+        ["34 23", Clue(34, 23)],
+        ["34 23", Clue(34, 23)],
+        ["34 23", Clue(34, 23)]
+    ]
+
+    @dynamic_test(data=test_data)
+    def test(self, inp, clue):
         pr = TestedProgram()
-        output = pr.start()
+        pr.start()
+        output = pr.execute(inp)
 
         mazes = MazeCheck.parse(output)
 
@@ -265,15 +294,28 @@ class MazeRunnerTests(StageTest):
 
         maze = mazes[0]
 
+        for prev in self.previous_mazes:
+            if prev.equals(maze):
+                return CheckResult.wrong("This is the same maze that was in the previous tests. " +
+                                         "You should create an algorithm that generates different mazes.")
+        self.previous_mazes.append(maze)
+
         entrances = maze.count_entrances()
         if entrances != 2:
-            return CheckResult.wrong(f"There are {entrances} entrances to the maze, should be two.")
+            return CheckResult.wrong(f"There are {entrances} entrances to the maze, should be only two.")
 
         empty_left = maze.check_accessibility()
         if empty_left > 0:
             return CheckResult.wrong(
                 f"There are {empty_left} empty cells that are inaccessible from the entrance of the maze (or there is "
                 f"no way from the entrance to the exit).")
+
+        if maze.get_height() != clue.height:
+            return CheckResult.wrong(
+                f"Number of rows in the maze is incorrect. It's {maze.get_height()}, but should be {clue.height}")
+        if maze.get_width() != clue.width:
+            return CheckResult.wrong(
+                f"Number of columns in the maze is incorrect. It's {maze.get_width()}, but should be {clue.width}")
 
         return CheckResult.correct()
 

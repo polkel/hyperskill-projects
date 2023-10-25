@@ -345,6 +345,6 @@ files:
 
     if __name__ == '__main__':    MazeRunnerTests().run_tests()
   learner_created: false
-feedback_link: https://hyperskill.org/projects/305/stages/1715/implement#comment
+feedback_link: https://hyperskill.org/learn/step/24121#comment
 status: Unchecked
 record: -1

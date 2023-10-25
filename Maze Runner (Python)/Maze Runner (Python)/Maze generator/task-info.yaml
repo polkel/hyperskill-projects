@@ -342,6 +342,9 @@ files:
 
     if __name__ == '__main__':    MazeRunnerTests().run_tests()
   learner_created: false
-feedback_link: https://hyperskill.org/projects/305/stages/1713/implement#comment
-status: Unchecked
+feedback_link: https://hyperskill.org/learn/step/24119#comment
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 25 Oct 2023 18:57:56 UTC"
 record: -1

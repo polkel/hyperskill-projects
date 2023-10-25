@@ -300,9 +300,9 @@ files:
   visible: true
   text: print('Hello World!')
   learner_created: false
-feedback_link: https://hyperskill.org/projects/305/stages/1712/implement#comment
+feedback_link: https://hyperskill.org/learn/step/24118#comment
 status: Solved
 feedback:
   message: Congratulations!
   time: "Tue, 24 Oct 2023 18:16:37 UTC"
-record: -1
+record: 1
