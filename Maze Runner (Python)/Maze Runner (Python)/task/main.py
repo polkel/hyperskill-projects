@@ -1,11 +1,92 @@
 import numpy as np
 import random
 import itertools
+import dill
+import os
+
+
+class MazeMenu:
+    def __init__(self):
+        self.current_maze = None
+        self.ask_user_input()
+
+    def ask_user_input(self):
+        menu_head = "=== Menu ===\n1. Generate a new maze\n2. Load a maze\n"
+        menu_body = "3. Save the maze\n4. Display the maze\n5. Find the escape\n"
+        menu_tail = "0. Exit\n"
+        menu_string = menu_head
+        if self.current_maze:
+            menu_string += menu_body
+        menu_string += menu_tail
+        menu_options = [self.exit_menu,
+                        self.generate_maze,
+                        self.load_maze,
+                        self.save_maze,
+                        self.display_maze,
+                        self.escape]
+        user_input = int(input(menu_string))
+        try:
+            menu_options[user_input]()
+        except IndexError:
+            self.incorrect_option()
+            self.ask_user_input()
+
+    def generate_maze(self):
+        user_input = int(input("Enter the size of a new maze\n"))
+        self.current_maze = Maze2(user_input, user_input)
+        self.current_maze.show_maze()
+        self.ask_user_input()
+
+    def load_maze(self):
+        file_name = input()
+        try:
+            with open(file_name, "rb") as file:
+                maze = dill.load(file)
+                class_match = f"<class '{__name__}.Maze2'>"
+                if str(type(maze)) == class_match:
+                    self.current_maze = maze
+                else:
+                    print("Cannot load the maze. It has an invalid format\n")
+        except FileNotFoundError:
+            print(f"The file {file_name} does not exist\n")
+        self.ask_user_input()
+
+    def save_maze(self):
+        if self.current_maze:
+            file_name = input()
+            with open(file_name, "wb") as file:
+                dill.dump(self.current_maze, file)
+        else:
+            self.incorrect_option()
+        self.ask_user_input()
+
+    def display_maze(self):
+        if self.current_maze:
+            self.current_maze.show_maze()
+        else:
+            self.incorrect_option()
+        self.ask_user_input()
+
+    def escape(self):
+        if self.current_maze:
+            self.current_maze.show_maze(solution=True)
+        else:
+            self.incorrect_option()
+        self.ask_user_input()
+
+    @staticmethod
+    def incorrect_option():
+        print("Incorrect option. Please try again\n")
+
+    @staticmethod
+    def exit_menu():
+        print("Bye!")
 
 
 class Maze2:
     space_symbol = "  "
     wall_symbol = "\u2588\u2588"
+    escape_route = "//"
 
     def __init__(self, width, height):
         self.width = width
@@ -15,6 +96,9 @@ class Maze2:
         self.ends = set()
         self.grid = np.full((self.height, self.width), 1)  # initialize grid as all walls
         self.generate_maze()
+        self.solution_path = [[], []]  # row and column indices of the solution
+        self.dfs_visited = set()
+        self.solve_maze(self.entrance_cell)
 
     def generate_maze(self):
         start_row = random.choice(range(1, self.height - 1, 2))  # make sure not to start on a border
@@ -62,14 +146,14 @@ class Maze2:
                 self.make_path(next_cell)
 
     @staticmethod
-    def adjacent_cells(cell):
+    def adjacent_cells(cell, distance=2):
         cells = []
         row = cell[0]
         col = cell[1]
-        row_above = row - 2
-        row_below = row + 2
-        col_left = col - 2
-        col_right = col + 2
+        row_above = row - distance
+        row_below = row + distance
+        col_left = col - distance
+        col_right = col + distance
         cells.append((row, col_left))
         cells.append((row, col_right))
         cells.append((row_below, col))
@@ -104,15 +188,39 @@ class Maze2:
         right = col <= self.width - 1
         return up and down and left and right
 
-    def show_maze(self):
+    def show_maze(self, solution=False):
         # reference old maze grid, and make a new maze, fill in walls
         maze_grid = np.full((self.height, self.width), self.space_symbol)
         maze_grid[np.where(self.grid == 1)] = self.wall_symbol
         maze_to_print = ""
+        if solution:
+            maze_grid[self.solution_path[0], self.solution_path[1]] = self.escape_route
         for row in maze_grid:
             maze_to_print += "".join(row)
             maze_to_print += "\n"
         print(maze_to_print)
+
+    def solve_maze(self, cell):
+        self.dfs_visited.add(cell)
+        escape_found = False
+        if cell == self.exit_cell:
+            escape_found = True
+        else:
+            adjacent_cells = self.adjacent_cells(cell, distance=1)
+            for next_cell in adjacent_cells:
+                try:
+                    if self.grid[next_cell] == 1 or next_cell in self.dfs_visited:
+                        continue
+                    else:
+                        escape_found = self.solve_maze(next_cell)
+                        if escape_found:
+                            break
+                except IndexError:
+                    continue
+        if escape_found:
+            self.solution_path[0].append(cell[0])
+            self.solution_path[1].append(cell[1])
+        return escape_found
 
 
 class Maze:
@@ -287,13 +395,7 @@ class Maze:
 
 
 if __name__ == "__main__":
-    player_input = input("Please, enter the size of a maze\n")
-    sizes = player_input.split(" ")
-    width_input = int(sizes[1])
-    height_input = int(sizes[0])
-    my_maze = Maze2(width_input, height_input)
-    # my_maze.generate_walls_empty_space_3()
-    my_maze.show_maze()
+    menu = MazeMenu()
 
 # Need to implement a few algorithms
 # Maze generator

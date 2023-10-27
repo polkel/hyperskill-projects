@@ -249,73 +249,76 @@ class MazeCheck:
 
 
 class Clue:
-    def __init__(self, h: int, w: int):
-        self.height = h
-        self.width = w
+    def __init__(self, s: int, c: int, wp: bool):
+        self.size = s
+        self.count = c
+        self.withPath = wp
 
 
 class MazeRunnerTests(StageTest):
-    previous_mazes = []
-
     test_data = [
-        ["7 9", Clue(7, 9)],
-        ["15 35", Clue(15, 35)],
-        ["15 35", Clue(15, 35)],
-        ["15 35", Clue(15, 35)],
-        ["15 35", Clue(15, 35)],
-        ["15 35", Clue(15, 35)],
-        ["15 35", Clue(15, 35)],
-        ["15 35", Clue(15, 35)],
-        ["15 35", Clue(15, 35)],
-        ["34 23", Clue(34, 23)],
-        ["34 23", Clue(34, 23)],
-        ["34 23", Clue(34, 23)],
-        ["34 23", Clue(34, 23)],
-        ["34 23", Clue(34, 23)],
-        ["34 23", Clue(34, 23)],
-        ["34 23", Clue(34, 23)],
-        ["34 23", Clue(34, 23)]
+        ["1 17 0", Clue(17, 1, False)],
+        ["1 29 3 test_maze.txt 0", Clue(29, 1, False)],
+        ["2 test_maze.txt 4 0", Clue(29, 1, False)],
+        ["1 35 3 test_maze.txt 0", Clue(35, 1, False)],
+        ["2 test_maze.txt 4 0", Clue(35, 1, False)],
+        ["2 test_maze.txt 4 5 0", Clue(35, 2, True)]
     ]
 
     @dynamic_test(data=test_data)
-    def test(self, inp, clue):
+    def test_exit(self, inp, clue):
         pr = TestedProgram()
         pr.start()
-        output = pr.execute(inp)
+
+        output = ""
+
+        for i in inp.split(' '):
+            output += pr.execute(i)
 
         mazes = MazeCheck.parse(output)
 
         if len(mazes) == 0:
             return CheckResult.wrong(
                 "No mazes found in the output. Check if you are using \\u2588 character to print the maze.")
-        if len(mazes) > 1:
-            return CheckResult.wrong(
-                f"Found {len(mazes)} mazes in the output. Should be only one maze.")
 
-        maze = mazes[0]
+        if len(mazes) != clue.count:
+            if clue.count == 1:
+                return CheckResult.wrong(f"Found {len(mazes)} mazes in the output. Should be only one maze.")
+            else:
+                return CheckResult.wrong(f"Found {len(mazes)} mazes in the output. Should be only two mazes.")
 
-        for prev in self.previous_mazes:
-            if prev.equals(maze):
-                return CheckResult.wrong("This is the same maze that was in the previous tests. " +
-                                         "You should create an algorithm that generates different mazes.")
-        self.previous_mazes.append(maze)
+        fst = mazes[0]
+        snd = mazes[1] if len(mazes) == 2 else None
 
-        entrances = maze.count_entrances()
+        if not (snd is None) and not fst.equals(snd):
+            return CheckResult.wrong("The two mazes shown should be equal, but they are different.")
+
+        if fst.count(Elem.PATH) != 0:
+            return CheckResult.wrong("The first maze should not contain '/' characters.")
+
+        entrances = fst.count_entrances()
         if entrances != 2:
             return CheckResult.wrong(f"There are {entrances} entrances to the maze, should be only two.")
 
-        empty_left = maze.check_accessibility()
+        empty_left = fst.check_accessibility()
         if empty_left > 0:
             return CheckResult.wrong(
                 f"There are {empty_left} empty cells that are inaccessible from the entrance of the maze (or there is "
                 f"no way from the entrance to the exit).")
 
-        if maze.get_height() != clue.height:
+        if fst.get_height() != clue.size:
             return CheckResult.wrong(
-                f"Number of rows in the maze is incorrect. It's {maze.get_height()}, but should be {clue.height}")
-        if maze.get_width() != clue.width:
+                f"Number of rows in the maze is incorrect. It's {fst.get_height()}, but should be {clue.size}")
+        if fst.get_width() != clue.size:
             return CheckResult.wrong(
-                f"Number of columns in the maze is incorrect. It's {maze.get_width()}, but should be {clue.width}")
+                f"Number of columns in the maze is incorrect. It's {fst.get_width()}, but should be {clue.size}")
+
+        if not (snd is None) and clue.withPath:
+            path_left = snd.check_path()
+            if path_left > 0:
+                return CheckResult.wrong(f"There are {path_left} escape path ('//') " +
+                                         "cells that are separated from the escape path of the maze " +
+                                         "(or there is a break somewhere in the escape path).")
 
         return CheckResult.correct()
 

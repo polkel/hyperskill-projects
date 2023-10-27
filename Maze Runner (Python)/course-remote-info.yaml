@@ -4,7 +4,7 @@ hyperskill_project:
   is_template_based: false
   use_ide: true
   environment: unittest
-update_date: "Wed, 25 Oct 2023 15:36:38 UTC"
+update_date: "Thu, 26 Oct 2023 21:52:38 UTC"
 stages:
 - id: 1712
   step: 24118
@@ -14,10 +14,10 @@ stages:
   is_completed: true
 - id: 1714
   step: 24120
-  is_completed: false
+  is_completed: true
 - id: 1715
   step: 24121
-  is_completed: false
+  is_completed: true
 topics:
   0:
   - title: Computer algorithms

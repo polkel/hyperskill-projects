@@ -345,6 +345,326 @@ files:
 
     if __name__ == '__main__':    MazeRunnerTests().run_tests()
   learner_created: false
+- name: test_maze.txt
+  visible: true
+  text: "�\x04��3\0\0\0\0\0\0�\ndill._dill��\f_create_type���(h\0�\n_load_type����\
+    \x04type���R��\x05Maze2�h\x04�\x06object���R���}�(�\n__module__��\b__main__��\f\
+    space_symbol��\x02  ��\vwall_symbol��\x06██��\b__init__�h\0�\x10_create_function�\
+    ��(h\0�\f_create_code���(C\x0e\0\x01\x06\x01\x06\x01\x06\x01\x06\x01\b\x01\x16\
+    \x01�K\x03K\0K\0K\x03K\x04KCCB|\x01|\0_\0|\x02|\0_\x01d\0|\0_\x02d\0|\0_\x03t\x04\
+    �\0|\0_\x05t\x06�\a|\0j\x01|\0j\0f\x02d\x01�\x02|\0_\b|\0�\t�\0\x01\0d\0S\0�NK\x01\
+    ��(�\x05width��\x06height��\nentrance_cell��\texit_cell��\x03set��\x04ends��\x02\
+    np��\x04full��\x04grid��\ngenerate_maze�t��\x04self�h\x1ch\x1d���VC:\\Users\\\
+    Paul C\\PycharmProjects\\Maze Runner (Python)\\Maze Runner (Python)\\task\\main.py�\
+    h\x14KRC\x0e\x06\x01\x06\x01\x06\x01\x06\x01\b\x01\x16\x01\f\x01�))t�R�}��\b__name__�\
+    h\x0fsh\x14NNt�R�}�}�(�\x0f__annotations__�}��\f__qualname__��\x0eMaze2.__init__�\
+    u��bh%h\x16(h\x18(C\b\0\x01\x18\x01\x18\x01\b\x01�K\x01K\0K\0K\x04K\x06KCCFt\0\
+    �\x01t\x02d\x01|\0j\x03d\x01\x18\0d\x02�\x03�\x01}\x01t\0�\x01t\x02d\x01|\0j\x04\
+    d\x01\x18\0d\x02�\x03�\x01}\x02|\x01|\x02f\x02}\x03|\0�\x05|\x03�\x01\x01\0d\0\
+    S\0�NK\x01K\x02��(�\x06random��\x06choice��\x05range�h\x1dh\x1c�\tmake_path�t�\
+    (h'�\tstart_row��\tstart_col��\nstart_cell�t�h)h%K[C\b\x18\x01\x18\x01\b\x01\x0e\
+    \x01�))t�R�}�h.h\x0fsh%NNt�R�}�}�(h3}�h5�\x13Maze2.generate_maze�u��bh>h\x16(h\x18\
+    (CD\0\x01\n\x01\n\x01\b\x01\x14\x01\x02\x01\x18\x01\x18\x01\b\x01\n\x01\b\x01\x06\
+    \x01\n\x01\b\x02\x06\x01\x0e\x01\x06\x01\x04\x01\b\x01\x06\x01\b\x01\x06\x01\b\
+    \x01\x04\x01\x10\x01\n\x01\b\x02\x06\x01\x0e\x02\f\x01\x0e\x01\f\x02\n\x01\fޔ\
+    K\x02K\0K\0K\tK\x05KCBP\x01\0\0d\x01|\0j\0|\x01<\0|\0�\x01|\x01�\x01}\x02|\x02\
+    D\0]�}\x03|\0�\x02|\x03�\x01r\x19|\0j\0|\x03\x19\0s\x19q\ft\x03|\x03d\x01\x19\0\
+    |\x01d\x01\x19\0\x17\0d\x02\e\0�\x01}\x04t\x03|\x03d\x03\x19\0|\x01d\x03\x19\0\
+    \x17\0d\x02\e\0�\x01}\x05|\x04|\x05f\x02}\x06|\0�\x04|\x03�\x01}\a|\ad\x04k\x03\
+    r�|\0j\x05sT|\0�\x02|\x03�\x01rJ|\x03|\0_\x05n\x03|\x06|\0_\x05d\x01|\0j\0|\0\
+    j\x05<\0n:|\0j\x06s�d\x05}\b|\ad\x06k\x02r`d\a}\bn\n|\ad\ak\x02rgd\x06}\bn\x06\
+    |\ad\x05k\x02rmd\b}\b|\b|\0�\x04|\0j\x05�\x01k\x02r�|\0�\x02|\x03�\x01r~|\x03\
+    |\0_\x06n\x03|\x06|\0_\x06d\x01|\0j\0|\0j\x06<\0n\x06|\0j\a�\b|\x01�\x01\x01\0\
+    |\0�\x04|\x06�\x01d\x04k\x02r�d\x01|\0j\0|\x06<\0q\fd\x01|\0j\0|\x06<\0|\0�\t\
+    |\x03�\x01\x01\0q\fd\0S\0�(NK\0K\x02K\x01�\x02in��\x02up��\x05right��\x04left�\
+    �\x04down�t�(h$�\x0eadjacent_cells��\tin_bounds��\x03int��\vcell_border�h\x1e\
+    h\x1fh!�\x03add�h>t�(h'�\x04cell�hW�\tnext_cell��\vbetween_row��\vbetween_col�\
+    �\fbetween_cell��\x06border��\bopposite�t�h)h>KaCH\n\x01\n\x01\b\x01\x14\x01\x02\
+    \x01\x18\x01\x18\x01\b\x01\n\x01\b\x01\x06\x01\n\x01\b\x01\x06\x02\x0e\x01\x06\
+    \x01\x04\x01\b\x01\x06\x01\b\x01\x06\x01\b\x01\x04\x01\x10\x01\n\x01\b\x01\x06\
+    \x02\f\x01\x02�\f\x02\x0e\x01\n\x01\x02�\n\x02\f\x01\x04ޔ))t�R�}�h.h\x0fsh>NNt�\
+    R�}�}�(h3}�h5�\x0fMaze2.make_path�u��bhWh\x04�\fstaticmethod���R�h\x16(h\x18(C\x1a\
+    \0\x02\x04\x01\b\x01\b\x01\b\x01\b\x01\b\x01\b\x01\x0e\x01\x0e\x01\x0e\x01\x0e\
+    \x01\n\x01�K\x01K\0K\0K\bK\x04KCCzg\0}\x01|\0d\x01\x19\0}\x02|\0d\x02\x19\0}\x03\
+    |\x02d\x03\x18\0}\x04|\x02d\x03\x17\0}\x05|\x03d\x03\x18\0}\x06|\x03d\x03\x17\0\
+    }\a|\x01�\0|\x02|\x06f\x02�\x01\x01\0|\x01�\0|\x02|\af\x02�\x01\x01\0|\x01�\0\
+    |\x05|\x03f\x02�\x01\x01\0|\x01�\0|\x04|\x03f\x02�\x01\x01\0t\x01�\x02|\x01�\x01\
+    \x01\0|\x01S\0�(NK\0K\x01K\x02t��\x06append�h;�\ashuffle���(h]�\x05cells��\x03\
+    row��\x03col��\trow_above��\trow_below��\bcol_left��\tcol_right�t�h)hWK�C\x1a\x04\
+    \x02\b\x01\b\x01\b\x01\b\x01\b\x01\b\x01\x0e\x01\x0e\x01\x0e\x01\x0e\x01\n\x01\
+    \x04\x01�))t�R�}�h.h\x0fshWNNt�R�}�}�(h3}�h5�\x14Maze2.adjacent_cells�u��b��R�\
+    hZh\x16(h\x18(C&\0\x01\b\x01\b\x01\b\x01\x0e\x01\b\x01\x0e\x01\x04\x01\x04\x01\
+    \x04\a\x04�\x04\x01\x04\x05\x04�\x04\x01\x04\x03\x04�\x04\x01\x04\x01�K\x02K\0\
+    K\0K\tK\x03KCCp|\x01d\x01\x19\0}\x02|\x01d\x02\x19\0}\x03|\x03d\x01k\x01}\x04\
+    |\x03|\0j\0d\x02\x18\0k\x05}\x05|\x02d\x01k\x01}\x06|\x02|\0j\x01d\x02\x18\0k\x05\
+    }\ad\x03}\b|\x04r&d\x04}\b|\bS\0|\x05r,d\x05}\b|\bS\0|\x06r2d\x06}\b|\bS\0|\a\
+    r6d\a}\b|\bS\0�(NK\0K\x01hQhThShRhUt�h\x1ch\x1d��(h'h]hzh{hThShRhU�\x06result�\
+    t�h)hZK�C&\b\x01\b\x01\b\x01\x0e\x01\b\x01\x0e\x01\x04\x01\x04\x01\x04\x01\x04\
+    \a\x04�\x04\x01\x04\x05\x04�\x04\x01\x04\x03\x04�\x04\x01\x04\x01�))t�R�}�h.h\x0f\
+    shZNNt�R�}�}�(h3}�h5�\x11Maze2.cell_border�u��bhXh\x16(h\x18(C\x0e\0\x01\b\x01\
+    \b\x01\b\x01\x0e\x01\b\x01\x0e\x01�K\x02K\0K\0K\bK\x03KCCL|\x01d\x01\x19\0}\x02\
+    |\x01d\x02\x19\0}\x03|\x02d\x01k\x05}\x04|\x02|\0j\0d\x02\x18\0k\x01}\x05|\x03\
+    d\x01k\x05}\x06|\x03|\0j\x01d\x02\x18\0k\x01}\a|\x04o%|\x05o%|\x06o%|\aS\0�NK\0\
+    K\x01��h\x1dh\x1c��(h'h]hzh{hRhUhThSt�h)hXK�C\x0e\b\x01\b\x01\b\x01\x0e\x01\b\x01\
+    \x0e\x01\x10\x01�))t�R�}�h.h\x0fshXNNt�R�}�}�(h3}�h5�\x0fMaze2.in_bounds�u��b�\
+    \tshow_maze�h\x16(h\x18(C\x0e\0\x02\x16\x01\x16\x01\x04\x01\b\x01\x0e\x01\n\x01\
+    �K\x01K\0K\0K\x04K\x06KCC\\t\0�\x01|\0j\x02|\0j\x03f\x02|\0j\x04�\x02}\x01|\0\
+    j\x05|\x01t\0�\x06|\0j\ad\x01k\x02�\x01<\0d\x02}\x02|\x01D\0]\n}\x03|\x02d\x02\
+    �\b|\x03�\x017\0}\x02|\x02d\x037\0}\x02q\x1at\t|\x02�\x01\x01\0d\0S\0�(NK\x01�\
+    \0��\x01\n�t�(h\"h#h\x1dh\x1ch\x10h\x12�\x05where�h$�\x04join��\x05print�t�(h'�\
+    \tmaze_grid��\nmaze_to_print�hzt�h)h�K�C\x0e\x16\x02\x16\x01\x04\x01\b\x01\x0e\
+    \x01\n\x01\f\x01�))t�R�}�h.h\x0fsh�NNt�R�}�}�(h3}�h5�\x0fMaze2.show_maze�u��b�\
+    \a__doc__�N�\n__slotnames__�]�ut�R�h�(h.h\x0f�\b__file__��VC:\\Users\\Paul C\\\
+    PycharmProjects\\Maze Runner (Python)\\Maze Runner (Python)\\task\\main.py��\n\
+    __cached__��oC:\\Users\\Paul C\\PycharmProjects\\Maze Runner (Python)\\Maze Runner\
+    \ (Python)\\task\\__pycache__\\main.cpython-310.pyc�h�N�\n__loader__��\x1a_frozen_importlib_external�\
+    �\x10SourceFileLoader���)��}�(�\x04name��\x04main��\x04path�h�ub�\v__package__�\
+    h��\b__spec__��\x11_frozen_importlib��\nModuleSpec���)��}�(h�h׌\x06loader�hԌ\x06\
+    origin�h͌\floader_state�N�\x1asubmodule_search_locations�N�\n_set_fileattr���\a\
+    _cached�h�ub�\f__builtins__�cbuiltins\n__dict__\nh\"h\0�\x0e_import_module����\
+    \x05numpy���R�h;h�h;��R��\titertools�h�hR��\x04dill�h�h�R��\x02os�h�h�R��\bMazeMenu�\
+    h\x02(h\ah�h\v��}�(h\x0eh\x0fh\x14h\x16(h\x18(C\x04\0\x01\x06\x01�K\x01K\0K\0\
+    K\x01K\x02KCC\x12d\0|\0_\0|\0�\x01�\0\x01\0d\0S\0�N���\fcurrent_maze��\x0eask_user_input�\
+    ��h'��h)h\x14K\tC\x04\x06\x01\f\x01�))t�R�}�h.h\x0fsh\x14NNt�R�}�}�(h3}�h5�\x11\
+    MazeMenu.__init__�u��bh�h\x16(h\x18(C(\0\x01\x04\x01\x04\x01\x04\x01\x04\x01\x06\
+    \x01\b\x01\b\x01\x04\x01\x04\x01\x04\x01\x04\x01\x04�\x04\x05\f\x01\x02\x01\x10\
+    \x01\f\x01\b\x01\x0e��K\x01K\0K\0K\aK\bKCC�d\x01}\x01d\x02}\x02d\x03}\x03|\x01\
+    }\x04|\0j\0r\x0f|\x04|\x027\0}\x04|\x04|\x037\0}\x04|\0j\x01|\0j\x02|\0j\x03|\0\
+    j\x04|\0j\x05g\x05}\x05t\x06t\a|\x04�\x01�\x01}\x06z\b|\x05|\x06\x19\0�\0\x01\0\
+    W\0d\0S\0\x04\0t\by?\x01\0\x01\0\x01\0|\0�\t�\0\x01\0|\0�\n�\0\x01\0Y\0d\0S\0\
+    w\0�(N�3=== Menu ===\n1. Generate a new maze\n2. Load a maze\n��%3. Save the maze\n\
+    4. Display the maze\n��\b0. Exit\n�t�(h��\texit_menu�h%�\tload_maze��\tsave_maze�\
+    �\fdisplay_maze�hY�\x05input��\nIndexError��\x10incorrect_option�h�t�(h'�\tmenu_head�\
+    �\tmenu_body��\tmenu_tail��\vmenu_string��\fmenu_options��\nuser_input�t�h)h�\
+    K\nC(\x04\x01\x04\x01\x04\x01\x04\x01\x06\x01\b\x01\b\x01\x04\x01\x04\x01\x04\x01\
+    \x04\x01\x04\x01\x04�\f\x05\x02\x01\x10\x01\f\x01\b\x01\x0e\x01\x02��))t�R�}�\
+    h.h\x0fsh�NNt�R�}�}�(h3}�h5�\x17MazeMenu.ask_user_input�u��bh%h\x16(h\x18(C\b\0\
+    \x01\f\x01\f\x01\n\x01�K\x01K\0K\0K\x02K\x03KCC.t\0t\x01d\x01�\x01�\x01}\x01t\x02\
+    |\x01|\x01�\x02|\0_\x03|\0j\x03�\x04�\0\x01\0|\0�\x05�\0\x01\0d\0S\0�N�\x1dEnter\
+    \ the size of a new maze\n���(hYj\x16\x01\0\0h\bh�h�h�t�h'j\x1f\x01\0\0��h)h%K!C\b\
+    \f\x01\f\x01\n\x01\f\x01�))t�R�}�h.h\x0fsh%NNt�R�}�}�(h3}�h5�\x16MazeMenu.generate_maze�\
+    u��bj\x13\x01\0\0h\x16(h\x18(C\x1a\0\x01\x06\x01\x02\x01\f\x01\n\x01\f\x01\x10\
+    \x01\b\x02\n� \a\f\x01\x14�\x02\x02�K\x01K\0K\0K\x05K\bKCC�t\0�\0}\x01z2t\x01\
+    |\x01d\x01�\x02�#}\x02t\x02�\x03|\x02�\x01}\x03d\x02t\x04�\0d\x03�\x03}\x04t\x05\
+    t\x06|\x03�\x01�\x01|\x04k\x02r!|\x03|\0_\an\x04t\bd\x04�\x01\x01\0W\0d\0\x04\0\
+    \x04\0�\x03\x01\0n\b1\0s/w\x01\x01\0\x01\0\x01\0Y\0\x01\0W\0n\x11\x04\0t\tyF\x01\
+    \0\x01\0\x01\0t\bd\x05|\x01�\0d\x06�\x03�\x01\x01\0Y\0n\x01w\0|\0�\n�\0\x01\0\
+    d\0S\0�(N�\x02rb��\b<class '��\b.Maze2'>��/Cannot load the maze. It has an invalid\
+    \ format\n��\tThe file ��\x10 does not exist\n�t�(j\x16\x01\0\0�\x04open�h�\x04\
+    load�h.�\x03str�h\x05h�h��\x11FileNotFoundError�h�t�(h'�\tfile_name��\x04file�\
+    �\x04maze��\vclass_match�t�h)j\x13\x01\0\0K'C\x1e\x06\x01\x02\x01\f\x01\n\x01\f\
+    \x01\x10\x01\b\x01\b\x02\x02�\x1c�\x04�\f\a\x14\x01\x02�\f\x02�))t�R�}�h.h\x0f\
+    sj\x13\x01\0\0NNt�R�}�}�(h3}�h5�\x12MazeMenu.load_maze�u��bj\x14\x01\0\0h\x16\
+    (h\x18(C\x0e\0\x01\x06\x01\x06\x01\f\x01\x10�\x1e\x03\b\x01�K\x01K\0K\0K\x03K\b\
+    KCCZ|\0j\0r#t\x01�\0}\x01t\x02|\x01d\x01�\x02�\x0f}\x02t\x03�\x04|\0j\0|\x02�\x02\
+    \x01\0W\0d\0\x04\0\x04\0�\x03\x01\0n\b1\0s\x1dw\x01\x01\0\x01\0\x01\0Y\0\x01\0\
+    n\x04|\0�\x05�\0\x01\0|\0�\x06�\0\x01\0d\0S\0�N�\x02wb���(h�j\x16\x01\0\0jF\x01\
+    \0\0h�\x04dump�j\x18\x01\0\0h�t�h'jK\x01\0\0jL\x01\0\0��h)j\x14\x01\0\0K5C\x10\
+    \x06\x01\x06\x01\f\x01\x10\x01\x1c�\x02�\b\x03\f\x01�))t�R�}�h.h\x0fsj\x14\x01\
+    \0\0NNt�R�}�}�(h3}�h5�\x12MazeMenu.save_maze�u��bj\x15\x01\0\0h\x16(h\x18(C\b\0\
+    \x01\x06\x01\f\x02\b\x01�K\x01K\0K\0K\x01K\x02KCC&|\0j\0r\t|\0j\0�\x01�\0\x01\0\
+    n\x04|\0�\x02�\0\x01\0|\0�\x03�\0\x01\0d\0S\0�h�(h�h�j\x18\x01\0\0h�t�j\0\x01\0\
+    \0h)j\x15\x01\0\0K>C\b\x06\x01\f\x01\b\x02\f\x01�))t�R�}�h.h\x0fsj\x15\x01\0\0\
+    NNt�R�}�}�(h3}�h5�\x15MazeMenu.display_maze�u��bj\x18\x01\0\0hrh\x16(h\x18(C\x02\
+    \0\x02�K\0K\0K\0K\0K\x02KCC\ft\0d\x01�\x01\x01\0d\0S\0�N�#Incorrect option. Please\
+    \ try again\n���h���)h)j\x18\x01\0\0KEC\x02\f\x02�))t�R�}�h.h\x0fsj\x18\x01\0\0\
+    NNt�R�}�}�(h3}�h5�\x19MazeMenu.incorrect_option�u��b��R�j\x12\x01\0\0hrh\x16(h\x18\
+    (C\x02\0\x02�K\0K\0K\0K\0K\x02KCj|\x01\0\0N�\x04Bye!���j\x7f\x01\0\0)h)j\x12\x01\
+    \0\0KIj�\x01\0\0))t�R�}�h.h\x0fsj\x12\x01\0\0NNt�R�}�}�(h3}�h5�\x12MazeMenu.exit_menu�\
+    u��b��R�h�Nut�R�j�\x01\0\0(h.h\x0fh�h�h�h�h�Nh�h�h�h�h�h�h�cbuiltins\n__dict__\n\
+    h\"h�h;h�h�h�h�h�h�h�h�j�\x01\0\0h\bhˌ\x04Maze�h\x02(h\aj�\x01\0\0h\v��}�(h\x0e\
+    h\x0fh\x10h\x11h\x12h\x13h\x14h\x16(h\x18(C\f\0\x01\x06\x01\x06\x01\x06\x01\x06\
+    \x01\x06\x01�K\x03K\0K\0K\x03K\x02KCC,|\x01|\0_\0|\x02|\0_\x01d\0|\0_\x02d\0|\0\
+    _\x03d\0|\0_\x04|\0�\x05�\0|\0_\x06d\0S\0�h�(h\x1ch\x1d�\x11entrance_location�\
+    �\nexit_location��\nmust_be_paths�h%h�t�h(h)h\x14K�C\f\x06\x01\x06\x01\x06\x01\
+    \x06\x01\x06\x01\x0e\x01�))t�R�}�h.h\x0fsh\x14NNt�R�}�}�(h3}�h5�\nMaze.__init__�\
+    u��bh%h\x16(h\x18(C(\0\x02\x14\x01\x10\x01\x10\x01\x16\x01\x16\x05\x06\x01\f\x01\
+    \x06\x01\x16\x01\x16\x01\n\x01\n\x01\x10\x01\x1a\x02\n\x01\x10\x01\x18\x01\n\x01\
+    \n\x02�K\x01K\0K\0K\x05K\x06KCB,\x01\0\0t\0�\x01|\0j\x02|\0j\x03f\x02d\x01�\x02\
+    }\x01d\x02|\x01d\x01d\0d\0�\x02f\x02<\0d\x02|\x01d\0d\0�\x02d\x01f\x02<\0d\x02\
+    |\x01|\0j\x02d\x02\x18\0d\0d\0�\x02f\x02<\0d\x02|\x01d\0d\0�\x02|\0j\x03d\x02\x18\
+    \0f\x02<\0|\0j\x02}\x02|\0j\x02|\0j\x03k\x04r<|\0j\x03}\x02t\x04�\x05t\x06d\x02\
+    |\x02d\x02\x18\0d\x03�\x03�\x01}\x03t\x04�\x05t\x06d\x02|\x02d\x02\x18\0d\x03�\
+    \x03�\x01}\x04|\x02|\0j\x02k\x02rq|\x03d\x01f\x02|\0_\a|\x04|\0j\x03d\x02\x18\0\
+    f\x02|\0_\b|\x03|\x04g\x02d\x02|\0j\x03d\x03\x18\0g\x02f\x02|\0_\tn\x19d\x01|\x03\
+    f\x02|\0_\a|\0j\x02d\x02\x18\0|\x04f\x02|\0_\bd\x01|\0j\x02d\x03\x18\0g\x02|\x03\
+    |\x04g\x02f\x02|\0_\td\x01|\x01|\0j\a<\0d\x01|\x01|\0j\b<\0|\x01S\0�hu(h\"h#h\x1d\
+    h\x1ch;h<h=j�\x01\0\0j�\x01\0\0j�\x01\0\0t�(h'h��\x0fent_exit_factor��\x10entrance_opening�\
+    �\fexit_opening�t�h)h%K�C(\x14\x02\x10\x01\x10\x01\x16\x01\x16\x01\x06\x05\f\x01\
+    \x06\x01\x16\x01\x16\x01\n\x01\n\x01\x10\x01\x1a\x01\n\x02\x10\x01\x18\x01\n\x01\
+    \n\x01\x04\x02�))t�R�}�h.h\x0fsh%NNt�R�}�}�(h3}�h5�\x12Maze.generate_maze�u��\
+    bh�h\x16(h\x18(C\x0e\0\x02\x16\x01\x16\x01\x04\x01\b\x01\x0e\x01\n\x01�K\x01K\0\
+    K\0K\x04K\x06KCh�h�(h\"h#h\x1dh\x1ch\x10h\x12h�h�h�h�t�h�h)h�K�h�))t�R�}�h.h\x0f\
+    sh�NNt�R�}�}�(h3}�h5�\x0eMaze.show_maze�u��b�\x1agenerate_walls_empty_space�h\x16\
+    (h\x18(C.\0\x03 \x01\x14\x01\x04\x01\b\x01\x14\x01\x14\x01\x1e\x01\b\x01\x12\x01\
+    \x12\x01\x10\x01\b\x01\x06\x01\b\x01\n\x01\f\x01\x10\x01\x04\x01\x12�\x02\x0e\b\
+    \x01\f�K\x01K\0K\0K\vK\aKCB:\x01\0\0|\0j\0|\0j\x01k\0r\v|\0j\0d\x01\x18\0n\x04\
+    |\0j\x01d\x01\x18\0}\x01|\0j\0d\x02k\0s\x1a|\0j\x01d\x02k\0r\x1cd\0S\0|\x01d\x03\
+    k\x04r�t\x02d\x03|\0j\0|\x01\x18\0�\x02D\0]b}\x02t\x02d\x03|\0j\x01|\x01\x18\0\
+    �\x02D\0]W}\x03|\0j\x03|\x02|\x02|\x01\x17\0�\x02|\x03|\x03|\x01\x17\0�\x02f\x02\
+    \x19\0}\x04|\x04�\x04�\0s�t\x05t\x02|\x02|\x02|\x01\x17\0�\x02�\x01}\x05t\x05\
+    t\x02|\x03|\x03|\x01\x17\0�\x02�\x01}\x06t\x06t\a�\b|\x05|\x06�\x02�\x01}\a|\a\
+    �\t�\0\x01\0t\n�\0}\b|\aD\0]\f}\t|\0�\v|\t�\x01sv|\b�\f|\t�\x01\x01\0qjt\x06t\n\
+    |\a�\x01|\b\x18\0�\x01}\n|\nr�d\x03|\0j\x03t\n�\x0e|\n�\x01<\0q2q(|\x01d\x038\0\
+    }\x01d\x04|\0j\x03|\0j\x0f<\0|\x01d\x03k\x04s d\0S\0d\0S\0�(NK\x02K\x04K\x01K\0\
+    t�(h\x1dh\x1ch=h��\x03any��\x05tuple��\x04list�h�\aproduct��\x04sort�h �\x10wall_eligibility�\
+    h[h;h<j�\x01\0\0t�(h'�\vwindow_size��\x01i��\x01j��\vtemp_window��\x04rows��\x04\
+    cols��\ntemp_cells��\tto_remove�h]�\trand_wall�t�h)j�\x01\0\0K�C2 \x03\x14\x01\
+    \x04\x01\b\x01\x14\x01\x14\x01\x1e\x01\b\x01\x12\x01\x12\x01\x10\x01\b\x01\x06\
+    \x01\b\x01\n\x01\n\x01\x02�\x10\x01\x04\x01\x10\x01\x02�\x02�\b\x0e\f\x01\x10�\
+    ))t�R�}�h.h\x0fsj�\x01\0\0NNt�R�}�}�(h3}�h5�\x1fMaze.generate_walls_empty_space�\
+    u��b�\x1cgenerate_walls_empty_space_2�h\x16(h\x18(C0\0\x01\x04\x01\x14\x01\x04\
+    \x01\f\x01\x0e\x01\n\x01\x14\x01\x14\x01\x1e\x01\b\x01\x12\x01\x12\x01\x10\x01\
+    \b\x01\x06\x01\b\x01\n\x01\f\x01\x10\x01\x04\x01\x12�\x02\x0e\f�K\x01K\0K\0K\f\
+    K\aKCB8\x01\0\0d\x01}\x01|\0j\0d\x02k\0s\f|\0j\x01d\x02k\0r\x0ed\0S\0t\x02�\x03\
+    d\x03g\x01�\x01}\x02t\x02�\x04|\x02|\0j\x05�\x02s�|\0j\x05�\x06�\0}\x02t\ad\x04\
+    |\0j\0|\x01\x18\0�\x02D\0]b}\x03t\ad\x04|\0j\x01|\x01\x18\0�\x02D\0]W}\x04|\0\
+    j\x05|\x03|\x03|\x01\x17\0�\x02|\x04|\x04|\x01\x17\0�\x02f\x02\x19\0}\x05|\x05\
+    �\b�\0s�t\tt\a|\x03|\x03|\x01\x17\0�\x02�\x01}\x06t\tt\a|\x04|\x04|\x01\x17\0�\
+    \x02�\x01}\at\nt\v�\f|\x06|\a�\x02�\x01}\b|\b�\n�\0\x01\0t\x0e�\0}\t|\bD\0]\f\
+    }\n|\0�\x0f|\n�\x01sv|\t�\x10|\n�\x01\x01\0qjt\nt\x0e|\b�\x01|\t\x18\0�\x01}\v\
+    |\vr�d\x04|\0j\x05t\x11�\x12|\v�\x01<\0q2q(d\x03|\0j\x05|\0j\x13<\0t\x02�\x04\
+    |\x02|\0j\x05�\x02r\ed\0S\0d\0S\0�(NK\x02K\x04K\0K\x01t�(h\x1dh\x1ch\"�\x05array�\
+    �\varray_equal�h��\x04copy�h=j�\x01\0\0j�\x01\0\0j�\x01\0\0h�j�\x01\0\0j�\x01\0\
+    \0h j�\x01\0\0h[h;h<j�\x01\0\0t�(h'j�\x01\0\0�\tlast_maze�j�\x01\0\0j�\x01\0\0\
+    j�\x01\0\0j�\x01\0\0j�\x01\0\0j�\x01\0\0j�\x01\0\0h]j�\x01\0\0t�h)j�\x01\0\0M\n\
+    \x01C4\x04\x01\x14\x01\x04\x01\f\x01\x0e\x01\n\x01\x14\x01\x14\x01\x1e\x01\b\x01\
+    \x12\x01\x12\x01\x10\x01\b\x01\x06\x01\b\x01\n\x01\n\x01\x02�\x10\x01\x04\x01\x10\
+    \x01\x02�\x02�\f\x0e\x16�))t�R�}�h.h\x0fsj�\x01\0\0NNt�R�}�}�(h3}�h5�!Maze.generate_walls_empty_space_2�\
+    u��b�\x1cgenerate_walls_empty_space_3�h\x16(h\x18(C4\0\x01 \x01\x14\x01\x04\x01\
+    \b\x01\f\x01\x0e\x01\n\x01\x14\x01\x14\x01\x1e\x01\b\x01\x12\x01\x12\x01\x10\x01\
+    \x06\x01\b\x01\n\x01\f\x01\f\x01\x04\x01\x12�\x02\n\f�\x0e\x11\b�K\x01K\0K\0K\f\
+    K\aKCB`\x01\0\0|\0j\0|\0j\x01k\0r\v|\0j\0d\x01\x18\0n\x04|\0j\x01d\x01\x18\0}\x01\
+    |\0j\0d\x02k\0s\x1a|\0j\x01d\x02k\0r\x1cd\0S\0|\x01d\x03k\x04r�t\x02�\x03d\x03\
+    g\x01�\x01}\x02t\x02�\x04|\x02|\0j\x05�\x02s�|\0j\x05�\x06�\0}\x02t\ad\x03|\0\
+    j\0|\x01\x18\0�\x02D\0]\\}\x03t\ad\x03|\0j\x01|\x01\x18\0�\x02D\0]Q}\x04|\0j\x05\
+    |\x03|\x03|\x01\x17\0�\x02|\x04|\x04|\x01\x17\0�\x02f\x02\x19\0}\x05|\x05�\b�\0\
+    s�t\tt\a|\x03|\x03|\x01\x17\0�\x02�\x01}\x06t\tt\a|\x04|\x04|\x01\x17\0�\x02�\x01\
+    }\at\nt\v�\f|\x06|\a�\x02�\x01}\bt\n�\0}\t|\bD\0]\f}\n|\0�\n|\n�\x01s�|\t�\x0e\
+    |\n�\x01\x01\0qxt\x0f|\b|\t\x18\0�\x01}\v|\vr�d\x03|\0j\x05t\x10�\x11|\v�\x01\
+    <\0qDq:d\x04|\0j\x05|\0j\x12<\0t\x02�\x04|\x02|\0j\x05�\x02r-|\x01d\x038\0}\x01\
+    |\x01d\x03k\x04s d\0S\0d\0S\0�j�\x01\0\0(h\x1dh\x1ch\"j�\x01\0\0j�\x01\0\0h�j�\
+    \x01\0\0h=j�\x01\0\0j�\x01\0\0h h�j�\x01\0\0j�\x01\0\0h[j�\x01\0\0h;h<j�\x01\0\
+    \0t�j�\x01\0\0h)j\x05\x02\0\0M\"\x01C8 \x01\x14\x01\x04\x01\b\x01\f\x01\x0e\x01\
+    \n\x01\x14\x01\x14\x01\x1e\x01\b\x01\x12\x01\x12\x01\x10\x01\x06\x01\b\x01\n\x01\
+    \n\x01\x02�\f\x01\x04\x01\x10\x01\x02�\x02�\f\n\x0e�\b\x11\x10�))t�R�}�h.h\x0f\
+    sj\x05\x02\0\0NNt�R�}�}�(h3}�h5�!Maze.generate_walls_empty_space_3�u��bj�\x01\0\
+    \0h\x16(h\x18(CH\0\x05\x04\x01\b\x01\b\x01\x18\x01\x04\x01(\x01\x0e\x01\x04\x01\
+    \x10\x01\x10\x01\x10\x01\b\x01\n\x01\x18\x01\x0e\x01\b\x02\b\x01\b\x01\b\x01\b\
+    \x01\x04\x01\x16\x01\x1a\x01\x02\x01\x16\x01\x16\x01\x02\x01\x1e\x01\x14\x01\b\
+    �\x02�\x02\x06\x18\x01\x0e\x01\x04\x01�K\x02K\0K\0K\x13K\aKCB�\x01\0\0d\x01}\x02\
+    |\x01d\x02\x19\0}\x03|\x01d\x03\x19\0}\x04|\x03d\x01\x16\0d\x03k\x02r\x18|\x04\
+    d\x01\x16\0d\x03k\x02r\x18d\x04S\0|\x03|\x03|\x03d\x03\x17\0|\x03d\x03\x18\0g\x04\
+    |\x04d\x03\x17\0|\x04d\x03\x18\0|\x04|\x04g\x04f\x02}\x05|\0j\0|\x05\x19\0�\x01\
+    �\0s5d\x04S\0|\x03d\x03\x18\0|\x03d\x03\x17\0f\x02}\x06|\x04d\x03\x18\0|\x04d\x03\
+    \x17\0f\x02}\at\x02t\x03�\x04|\x06|\a�\x02�\x01}\b|\bD\0]\x1d}\t|\0j\0|\t\x19\0\
+    rl|\td\x02\x19\0|\x03g\x02|\x04|\td\x03\x19\0g\x02f\x02}\n|\0j\0|\n\x19\0�\x01\
+    �\0sl\x01\0d\x04S\0qO|\x03d\x01\x18\0}\v|\x03d\x01\x17\0}\f|\x04d\x01\x18\0}\n\
+    |\x04d\x01\x17\0}\x0ed\x05}\x0ft\x05|\v|\fd\x03\x17\0|\x0f\x18\0�\x02D\0]E}\x10\
+    |\x10d\x02k\0s�|\x10d\x01\x17\0|\0j\x06d\x03\x18\0k\x04r�q�t\x05|\n|\x0ed\x03\x17\
+    \0|\x0f\x18\0�\x02D\0]+}\x11|\x11d\x02k\0s�|\x11|\0j\ad\x03\x18\0k\x04r�q�|\0\
+    j\0|\x10|\x10d\x05\x17\0�\x02|\x11|\x11d\x05\x17\0�\x02f\x02\x19\0}\x12t\b|\x12\
+    |\x12d\x02k\x02\x19\0�\x01|\x02k\0r�\x01\0\x01\0d\x04S\0q�q�|\x03d\x01\x16\0d\x02\
+    k\x02r�|\x04d\x01\x16\0d\x02k\x02r�d\x03|\0j\0|\x03|\x04f\x02<\0d\x04S\0d\x06\
+    S\0�(NK\x02K\0K\x01�K\x03�t�(h�j�\x01\0\0j�\x01\0\0h�j�\x01\0\0h=h\x1dh\x1c�\x03\
+    len�t�(h'�\ncell_coord��\x0ecluster_factor�hzh{�\nwall_check�j�\x01\0\0j�\x01\0\
+    \0�\acorners��\x06corner��\bto_check��\alow_row��\bhigh_row��\alow_col��\bhigh_col�\
+    j�\x01\0\0�\nwindow_row��\nwindow_col��\vcurr_window�t�h)j�\x01\0\0M?\x01CJ\x04\
+    \x05\b\x01\b\x01\x18\x01\x04\x01(\x01\x0e\x01\x04\x01\x10\x01\x10\x01\x10\x01\b\
+    \x01\n\x01\x18\x01\x0e\x01\x06\x01\x02�\b\x02\b\x01\b\x01\b\x01\x04\x01\x16\x01\
+    \x1a\x01\x02\x01\x16\x01\x16\x01\x02\x01\x1e\x01\x14\x01\b\x01\x02�\x02�\x18\x06\
+    \x0e\x01\x04\x01\x04\x01�))t�R�}�h.h\x0fsj�\x01\0\0NNt�R�}�}�(h3}�h5�\x15Maze.wall_eligibility�\
+    u��bh�Nut�R�j*\x02\0\0(h.h\x0fh�h�h�h�h�Nh�h�h�h�h�h�h�cbuiltins\n__dict__\nh\"\
+    h�h;h�h�h�h�h�h�h�h�j�\x01\0\0h\bh�j�\x01\0\0j3\x02\0\0u0j\f\x02\0\0(h.h\x0fh�\
+    h�h�h�h�Nh�h�h�h�h�h�h�cbuiltins\n__dict__\nh\"h�h;h�h�h�h�h�h�h�h�j�\x01\0\0\
+    h\bh�j�\x01\0\0j3\x02\0\0u0j�\x01\0\0(h.h\x0fh�h�h�h�h�Nh�h�h�h�h�h�h�cbuiltins\n\
+    __dict__\nh\"h�h;h�h�h�h�h�h�h�h�j�\x01\0\0h\bh�j�\x01\0\0j3\x02\0\0u0j�\x01\0\
+    \0(h.h\x0fh�h�h�h�h�Nh�h�h�h�h�h�h�cbuiltins\n__dict__\nh\"h�h;h�h�h�h�h�h�h�\
+    h�j�\x01\0\0h\bh�j�\x01\0\0j3\x02\0\0u0j�\x01\0\0(h.h\x0fh�h�h�h�h�Nh�h�h�h�h�\
+    h�h�cbuiltins\n__dict__\nh\"h�h;h�h�h�h�h�h�h�h�j�\x01\0\0h\bh�j�\x01\0\0j3\x02\
+    \0\0u0j�\x01\0\0(h.h\x0fh�h�h�h�h�Nh�h�h�h�h�h�h�cbuiltins\n__dict__\nh\"h�h;h�\
+    h�h�h�h�h�h�h�j�\x01\0\0h\bh�j�\x01\0\0j3\x02\0\0u0j�\x01\0\0(h.h\x0fh�h�h�h�\
+    h�Nh�h�h�h�h�h�h�cbuiltins\n__dict__\nh\"h�h;h�h�h�h�h�h�h�h�j�\x01\0\0h\bh�j�\
+    \x01\0\0j3\x02\0\0u0�\bbuiltins��\asetattr���j3\x02\0\0h5j�\x01\0\0��R0u0j�\x01\
+    \0\0(h.h\x0fh�h�h�h�h�Nh�h�h�h�h�h�h�cbuiltins\n__dict__\nh\"h�h;h�h�h�h�h�h�\
+    h�h�j�\x01\0\0h\bh�j�\x01\0\0j3\x02\0\0u0js\x01\0\0(h.h\x0fh�h�h�h�h�Nh�h�h�h�\
+    h�h�h�cbuiltins\n__dict__\nh\"h�h;h�h�h�h�h�h�h�h�j�\x01\0\0h\bh�j�\x01\0\0j3\x02\
+    \0\0u0je\x01\0\0(h.h\x0fh�h�h�h�h�Nh�h�h�h�h�h�h�cbuiltins\n__dict__\nh\"h�h;h�\
+    h�h�h�h�h�h�h�j�\x01\0\0h\bh�j�\x01\0\0j3\x02\0\0u0jS\x01\0\0(h.h\x0fh�h�h�h�\
+    h�Nh�h�h�h�h�h�h�cbuiltins\n__dict__\nh\"h�h;h�h�h�h�h�h�h�h�j�\x01\0\0h\bh�j�\
+    \x01\0\0j3\x02\0\0u0j5\x01\0\0(h.h\x0fh�h�h�h�h�Nh�h�h�h�h�h�h�cbuiltins\n__dict__\n\
+    h\"h�h;h�h�h�h�h�h�h�h�j�\x01\0\0h\bh�j�\x01\0\0j3\x02\0\0u0j$\x01\0\0(h.h\x0f\
+    h�h�h�h�h�Nh�h�h�h�h�h�h�cbuiltins\n__dict__\nh\"h�h;h�h�h�h�h�h�h�h�j�\x01\0\0\
+    h\bh�j�\x01\0\0j3\x02\0\0u0j\x04\x01\0\0(h.h\x0fh�h�h�h�h�Nh�h�h�h�h�h�h�cbuiltins\n\
+    __dict__\nh\"h�h;h�h�h�h�h�h�h�h�j�\x01\0\0h\bh�j�\x01\0\0j3\x02\0\0u0j6\x02\0\
+    \0j�\x01\0\0h5h���R0h\bh�j�\x01\0\0j3\x02\0\0u0h�(h.h\x0fh�h�h�h�h�Nh�h�h�h�h�\
+    h�h�cbuiltins\n__dict__\nh\"h�h;h�h�h�h�h�h�h�h�j�\x01\0\0h\bh�j�\x01\0\0j3\x02\
+    \0\0u0h�(h.h\x0fh�h�h�h�h�Nh�h�h�h�h�h�h�cbuiltins\n__dict__\nh\"h�h;h�h�h�h�\
+    h�h�h�h�j�\x01\0\0h\bh�j�\x01\0\0j3\x02\0\0u0h�(h.h\x0fh�h�h�h�h�Nh�h�h�h�h�h�\
+    h�cbuiltins\n__dict__\nh\"h�h;h�h�h�h�h�h�h�h�j�\x01\0\0h\bh�j�\x01\0\0j3\x02\0\
+    \0u0hh(h.h\x0fh�h�h�h�h�Nh�h�h�h�h�h�h�cbuiltins\n__dict__\nh\"h�h;h�h�h�h�h�\
+    h�h�h�j�\x01\0\0h\bh�j�\x01\0\0j3\x02\0\0u0hG(h.h\x0fh�h�h�h�h�Nh�h�h�h�h�h�h�\
+    cbuiltins\n__dict__\nh\"h�h;h�h�h�h�h�h�h�h�j�\x01\0\0h\bh�j�\x01\0\0j3\x02\0\0\
+    u0h-(h.h\x0fh�h�h�h�h�Nh�h�h�h�h�h�h�cbuiltins\n__dict__\nh\"h�h;h�h�h�h�h�h�\
+    h�h�j�\x01\0\0h\bh�j�\x01\0\0j3\x02\0\0u0j6\x02\0\0h�h5h\b��R0)��}�(h\x1cK\x0f\
+    h\x1dK\x0fh\x1eK\0K\x03��h\x1fK\x0eK\x03��h!��(K\x05K\x01��K\x05K\n��K\x03K\n�\
+    �K\nK\x05��K\x01K\t��K\nK\v��K\aK\x01��K\aK\n��K\tK\x01��K\tK\n��K\nK\x01��K\n\
+    K\a��K\x01K\x05��K\vK\n��K\x01K\v��K\nK\n��K\x01K\x01��K\nK\t��K\x01K\n��K\x01\
+    K\a���h$h\0�\n_create_array���(�\x15numpy.core.multiarray��\f_reconstruct���h�\
+    \andarray���K\0��C\x01b���(K\x01K\x0fK\x0f��h�\x05dtype����\x02i4�����R�(K\x03\
+    �\x01<�NNNJ����J����K\0t�b�B�\x03\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\0\0\0\0\x01\
+    \0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\x01\
+    \0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x01\0\0\0\0\0\0\0\
+    \0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x01\0\0\0\x01\
+    \0\0\0\0\0\0\0\x01\0\0\0\0\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\
+    \0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\0\0\0\0\x01\0\0\0\x01\0\0\0\0\0\0\
+    \0\x01\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x01\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+    \0\0\0\0\x01\0\0\0\0\0\0\0\x01\0\0\0\x01\0\0\0\0\0\0\0\x01\0\0\0\x01\0\0\0\x01\
+    \0\0\0\0\0\0\0\x01\0\0\0\0\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\0\0\0\0\x01\0\0\
+    \0\0\0\0\0\x01\0\0\0\x01\0\0\0\0\0\0\0\x01\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x01\0\
+    \0\0\0\0\0\0\0\0\0\0\0\0\0\0\x01\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x01\0\0\0\x01\0\
+    \0\0\0\0\0\0\x01\0\0\0\0\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\
+    \0\0\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\0\0\0\0\x01\0\0\0\x01\0\0\0\0\0\0\0\x01\
+    \0\0\0\0\0\0\0\x01\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x01\0\0\0\0\0\0\0\x01\0\0\0\0\
+    \0\0\0\0\0\0\0\0\0\0\0\x01\0\0\0\x01\0\0\0\0\0\0\0\x01\0\0\0\0\0\0\0\x01\0\0\0\
+    \0\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\0\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\0\
+    \0\0\0\x01\0\0\0\x01\0\0\0\0\0\0\0\x01\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x01\0\0\0\
+    \0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x01\0\0\0\0\0\0\0\x01\0\0\0\x01\0\0\0\
+    \0\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\
+    \x01\0\0\0\x01\0\0\0\0\0\0\0\x01\0\0\0\0\0\0\0\x01\0\0\0\x01\0\0\0\0\0\0\0\0\0\
+    \0\0\0\0\0\0\x01\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+    \x01\0\0\0\0\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\0\0\0\0\x01\0\0\0\0\
+    \0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\0\
+    \0\0\0\x01\0\0\0\x01\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x01\0\0\0\0\
+    \0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x01\0\0\0\x01\0\0\0\x01\
+    \0\0\0\x01\0\0\0\0\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\x01\
+    \0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0�t�Nt�R�ub."
+  learner_created: true
+- name: tiny.txt
+  visible: true
+  text: "�\x04��\x02\0\0\0\0\0\0�\b__main__��\x05Maze2���)��}�(�\x05width�K\n�\x06\
+    height�K\n�\nentrance_cell�K\0K\x03���\texit_cell�K\tK\x01���\x04ends���(K\aK\x01\
+    ��K\aK\a��K\x01K\x05��K\x03K\x01��K\x03K\a��K\x01K\x01��K\x05K\x01��K\x05K\a��\
+    K\aK\x03��K\x01K\a��K\aK\x05����\x04grid��\x15numpy.core.multiarray��\f_reconstruct�\
+    ���\x05numpy��\andarray���K\0��C\x01b���R�(K\x01K\nK\n��h\x1c�\x05dtype����\x02\
+    i4�����R�(K\x03�\x01<�NNNJ����J����K\0t�b�B�\x01\0\0\x01\0\0\0\x01\0\0\0\x01\0\
+    \0\0\0\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\
+    \0\0\0\0\0\0\x01\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x01\0\0\
+    \0\x01\0\0\0\0\0\0\0\x01\0\0\0\0\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\0\0\0\0\x01\
+    \0\0\0\x01\0\0\0\x01\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x01\0\0\0\0\0\0\0\0\0\0\0\0\
+    \0\0\0\0\0\0\0\x01\0\0\0\x01\0\0\0\0\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\
+    \0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\0\0\0\0\x01\0\0\0\0\0\0\
+    \0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x01\0\0\0\x01\0\0\0\0\0\0\0\x01\0\0\
+    \0\x01\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\0\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\
+    \0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x01\0\0\0\x01\
+    \0\0\0\0\0\0\0\x01\0\0\0\0\0\0\0\x01\0\0\0\0\0\0\0\x01\0\0\0\0\0\0\0\x01\0\0\0\
+    \x01\0\0\0\x01\0\0\0\0\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\
+    \x01\0\0\0\x01\0\0\0\x01\0\0\0�t�bub."
+  learner_created: true
 feedback_link: https://hyperskill.org/learn/step/24121#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Well done! You've finished the project. Select a new project on <a href="https://hyperskill.org/projects">Hyperskill</a>
+    to continue learning.
+  time: "Fri, 27 Oct 2023 01:02:03 UTC"
 record: -1
