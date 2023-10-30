@@ -1,0 +1,19 @@
+<div class="step-text">
+<h5 id="description">Description</h5>
+<p>By combining bubble sort and binary search algorithms, you could speed up a search to a great extent, but it still takes a lot to sort the input data with bubble sort. In this stage, you will further improve total time complexity by implementing <strong>merge sort</strong>. After sorting, implement binary search like in the previous stage.</p>
+<p>The worst-case time complexity for merge sort is <strong><span class="math-tex">\(O(n~log~n)\)</span></strong>,<strong> </strong>which is better than<strong> <span class="math-tex">\(O(n^2)\)</span></strong> of bubble sort. Make notes of the total time in this case.</p>
+<h5 id="objectives">Objectives</h5>
+<p>Your program should do the following:</p>
+<ol>
+<li>Take the unsorted data and divide the collection into two parts;</li>
+<li>Sort the left part with the merge sort algorithm. Divide the sub-parts further into equal parts until a single element remains and merge them;</li>
+<li>Sort the right part using the merge sort algorithm. Divide the sub-parts further into equal parts until a single element remains and merge them;</li>
+<li>Merge the resulting left and right collections by comparing the elements (ratings) and form a single sorted collection as a result;</li>
+<li>Once the collection is sorted, apply binary search and print the movie titles with a rating of 6.</li>
+</ol>
+<h5 id="example">Example</h5>
+<p><strong>Example 1: </strong><em>output of your program</em></p>
+<pre><code class="language-no-highlight">Hercules - 6.0
+The Fast and the Furious: Tokyo Drift - 6.0
+Finding You - 6.0</code></pre>
+</div>

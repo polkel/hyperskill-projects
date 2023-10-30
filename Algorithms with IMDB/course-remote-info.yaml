@@ -1,0 +1,217 @@
+hyperskill_project:
+  id: 213
+  ide_files: https://cogniterra.org/media/attachments/lesson/26008/additional_files.json
+  is_template_based: false
+  use_ide: true
+  environment: unittest
+update_date: "Sun, 29 Oct 2023 01:57:27 UTC"
+stages:
+- id: 1067
+  step: 16284
+  is_completed: true
+- id: 1068
+  step: 16285
+  is_completed: false
+- id: 1069
+  step: 16286
+  is_completed: false
+- id: 1070
+  step: 16287
+  is_completed: false
+- id: 1071
+  step: 16288
+  is_completed: false
+topics:
+  0:
+  - title: Binary numbers
+    theory_id: 5544
+  - title: Hexadecimal numbers
+    theory_id: 8788
+  - title: Units of information
+    theory_id: 6865
+  - title: Introduction to Operating systems
+    theory_id: 9704
+  - title: Command line overview
+    theory_id: 8977
+  - title: Immutability
+    theory_id: 7929
+  - title: Working with file modes and permissions
+    theory_id: 13961
+  - title: Introduction to Python
+    theory_id: 5204
+  - title: Overview of the basic program
+    theory_id: 5208
+  - title: "PEP 8: Coding style conventions"
+    theory_id: 5879
+  - title: Taking input
+    theory_id: 5913
+  - title: If statement
+    theory_id: 5953
+  - title: Else statement
+    theory_id: 5932
+  - title: For loop
+    theory_id: 6065
+  - title: Comments
+    theory_id: 6081
+  - title: Introduction to OOP
+    theory_id: 3614
+  - title: Installing packages with pip
+    theory_id: 6230
+  - title: Virtual Environment
+    theory_id: 13923
+  - title: PyCharm basics
+    theory_id: 6193
+  - title: While loop
+    theory_id: 5940
+  - title: Loop control statements
+    theory_id: 6302
+  - title: Unicode
+    theory_id: 7899
+  - title: Running Python applications in PyCharm
+    theory_id: 19153
+  - title: Files
+    theory_id: 13025
+  - title: File types
+    theory_id: 13017
+  - title: Introduction to Linux
+    theory_id: 9526
+  - title: File modes and permissions
+    theory_id: 13953
+  - title: Files in Python
+    theory_id: 8691
+  - title: Reading files
+    theory_id: 8139
+  - title: Writing files
+    theory_id: 8334
+  - title: Context manager
+    theory_id: 8702
+  - title: CSV
+    theory_id: 13164
+  - title: Working with CSV
+    theory_id: 11724
+  - title: Basic data types
+    theory_id: 5852
+  - title: Variables
+    theory_id: 5859
+  - title: Invoking a function
+    theory_id: 5891
+  - title: Boolean logic
+    theory_id: 6025
+  - title: Comparisons
+    theory_id: 5920
+  - title: List
+    theory_id: 5979
+  - title: Indexes
+    theory_id: 6189
+  - title: Declaring a function
+    theory_id: 5900
+  - title: Scopes
+    theory_id: 6322
+  - title: Tuple
+    theory_id: 7462
+  - title: Arguments
+    theory_id: 7248
+  - title: Operations with list
+    theory_id: 6031
+  - title: Quotes and multi-line strings
+    theory_id: 5814
+  - title: String formatting
+    theory_id: 6037
+  - title: Basic string methods
+    theory_id: 6842
+  - title: Escape sequences
+    theory_id: 7130
+  - title: Split and join
+    theory_id: 6972
+  - title: Set
+    theory_id: 6643
+  - title: Dictionary
+    theory_id: 6481
+  - title: Dictionary methods
+    theory_id: 9008
+  - title: Operations with dictionary
+    theory_id: 11096
+  - title: Type casting
+    theory_id: 6224
+  - title: How to choose a collection to use
+    theory_id: 13907
+  1:
+  - title: Computer algorithms
+    theory_id: 16547
+  - title: "Big O: how to count it"
+    theory_id: 35901
+  - title: "Best, average and worst cases"
+    theory_id: 20084
+  - title: Data structures
+    theory_id: 16927
+  - title: Pseudocode
+    theory_id: 15090
+  - title: Pseudocode basics
+    theory_id: 19510
+  - title: Complex constructions in pseudocode
+    theory_id: 20922
+  - title: Fixed-size array
+    theory_id: 20078
+  - title: Dynamic array
+    theory_id: 5357
+  - title: Load module
+    theory_id: 6019
+  - title: Elif statement
+    theory_id: 5926
+  - title: Time module
+    theory_id: 10963
+  - title: Intro to computational thinking
+    theory_id: 8742
+  - title: Components of computational thinking
+    theory_id: 8745
+  - title: Algorithms in Python
+    theory_id: 7316
+  - title: "Hashing: overview"
+    theory_id: 9831
+  - title: Searching problem
+    theory_id: 15894
+  - title: Linear search
+    theory_id: 4970
+  - title: Index() and in under the hood
+    theory_id: 16458
+  - title: List comprehension
+    theory_id: 6315
+  - title: Functional decomposition
+    theory_id: 9571
+  2:
+  - title: Sorting problem
+    theory_id: 4954
+  - title: Bubble sort
+    theory_id: 4962
+  3:
+  - title: Recursion basics
+    theory_id: 5984
+  - title: Binary search
+    theory_id: 4955
+  - title: Slicing
+    theory_id: 6177
+  - title: Recursion in Python
+    theory_id: 7665
+  4:
+  - title: Divide and conquer
+    theory_id: 19087
+  - title: Decrease and conquer
+    theory_id: 14669
+  - title: Iterators
+    theory_id: 8479
+  - title: find() under the hood
+    theory_id: 15716
+  - title: Insertion sort
+    theory_id: 19086
+  - title: Merge sort
+    theory_id: 29428
+  - title: sort() under the hood
+    theory_id: 15705
+  - title: Search in a string
+    theory_id: 9558
+  - title: Lambda functions
+    theory_id: 7092
+  - title: Ordering and total order
+    theory_id: 9253
+  - title: Sorting a list
+    theory_id: 10059
