@@ -1,0 +1,20 @@
+<div class="step-text">
+<h5 id="description">Description</h5>
+<p>Have you noticed how much time it takes for a linear search to fetch anything? The number of iterations with this algorithm is directly proportional to the number of elements in the data structure. Suppose our dataset contains one million elements. Does it necessarily mean one million iterations? Not always, but in the worst case, yes. Especially, if the target element tends to the end of the dataset. The time complexity for this algorithm is <span class="math-tex">\(O(n)\)</span>.</p>
+<p>To speed up the process and reduce the number of iterations, it is a good idea to implement a more efficient algorithm called <strong>binary search</strong> (also referred to as <strong>logarithmic search</strong>). Binary search works with a sorted collection of elements only — that's why you've sorted the array in the previous stage. The time complexity of the binary search algorithm is <span class="math-tex">\(O(log~n)\)</span>.</p>
+<p>In this stage, you need to implement the binary search algorithm and print the movie titles with a rating of 6.</p>
+<p><b>Tip:</b> Factoid time! If you put down all names in the world to search for a specific name, a binary search can find what you're looking for in 35 iterations.</p>
+<h5 id="objectives">Objectives</h5>
+<p>To complete this stage, your program should do the following:</p>
+<ol>
+<li>Take a sorted data collection, add the following variables: <code class="java">low = 0</code> and<strong> </strong><code class="java">high = n - 1</code>, where <code class="java">n</code> is the number of elements in the collection, to store the index of the first and the last element;</li>
+<li>Check the rating of the middle element in the collection. If it's equal to 6, print the movie title along with others;</li>
+<li>If the rating is less than 6, set<strong> </strong><code class="java">low = middle + 1</code>. It should be done with every iteration;</li>
+<li>If the rating is greater than 6, set <code class="java">high = middle - 1</code>. Repeat the procedure, starting from Step 2.</li>
+</ol>
+<h5 id="example">Example</h5>
+<p><strong>Example 1: </strong><em>output of your program</em></p>
+<pre><code class="language-no-highlight">Hercules - 6.0
+The Fast and the Furious: Tokyo Drift - 6.0
+Finding You - 6.0</code></pre>
+</div>
